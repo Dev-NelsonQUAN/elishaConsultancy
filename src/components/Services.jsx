@@ -60,7 +60,7 @@ const Services = () => {
                         '>What Can We Do For My Clients</p>
                     </div>
 
-                    <div className='flex items-center justify-between mt-14 gap-25 flex-wrap my-10'>
+                    <div className='grid grid-cols-3 my-10 gap-10'>
                         {
                             items.map((e) => (
                                 <ServicesCard key={e.id} titleTxt={e.titleTxt}

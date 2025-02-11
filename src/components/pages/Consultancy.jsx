@@ -49,12 +49,20 @@ const Consultancy = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-between mt-24'>
-                    <div className=''>
+                <div className='flex lg:justify-between mt-24 
+                max-[769px]:flex-col
+                max-[769px]:items-center
+                
+                '>
+                    <div className='
+                    max-[769px]:text-center
+                    '>
                         <p className='text-3xl font-bold'  >Get In Touch With Us</p>
 
-                        <div className='flex flex-col gap-12 mt-6'>
-                            <div className='flex items-center gap-5'>
+                        <div className='flex flex-col gap-12 mt-6
+                        '>
+                            <div className='flex items-center gap-5
+                            max-[769px]:justify-center'>
                                 <div>
                                     <IoCall size={30} />
 
@@ -66,13 +74,16 @@ const Consultancy = () => {
                                 </div>
                             </div>
 
-                            <div className='flex items-center gap-5'>
+                            <div className='flex items-center gap-5 
+                            max-[769px]:justify-center'>
                                 <IoMail size={34} />
 
                                 <p className='text-[24px] font-medium'>info.empcs@gmail.com</p>
                             </div>
 
-                            <div className='flex items-center gap-5'>
+                            <div className='flex items-center gap-5
+                            max-[769px]:justify-center
+                            '>
                                 <FaLocationDot size={30} />
 
                                 <p className='text-[24px] font-medium w-120'>2 Market Street, Tolu Road, down floor, shop 5, Olodi-Apapa Lagos, Nigeria</p>
@@ -91,33 +102,36 @@ const Consultancy = () => {
 
                         <div className='grid grid-cols-2 gap-4 mt-4'>
                             <input type="text" placeholder='First name'
-                            className='rounded-[5px] bg-white w-60
-                            pl-[5px] py-3 outline-none
-                            '
+                                className='rounded-[5px] bg-white 
+                                w-60
+                                pl-[5px] py-3 outline-none
+                                '
                             />
-                            <input type="text" placeholder='Last name' 
-                            className='rounded-[5px] bg-white
-                            pl-[5px] py-3 outline-none
-                            '
-                            />
+                            <input type="text" placeholder='Last name'
+                                className='rounded-[5px] bg-white
+                                w-60
+                                pl-[5px] py-3 outline-none
+                                '
+                                />
                             <input type="email" placeholder='Email'
                                 className='rounded-[5px] bg-white
+                                w-60
                                 pl-[5px] py-3 outline-none
                                 '
                                 
                                 />
-                            <input type="number" placeholder='Phone number' 
+                            <input type="number" placeholder='Phone number'
                                 className='rounded-[5px] bg-white
+                                w-60
                                 pl-[5px] py-3 outline-none
                                 '
                             />
                         </div>
-                        <div className='mt-4'>
-                            <textarea name="place" 
-                            placeholder='Message'
-                            className='w-full outline-none h-45 rounded-[5px]
-                            bg-white
-                            
+                        <div className='mt-4 '>
+                            <textarea name="place"
+                                placeholder='Message'
+                                className='w-full outline-none h-45 rounded-[5px]
+                            bg-white pl-[5px]
                             '
                             ></textarea>
                         </div>

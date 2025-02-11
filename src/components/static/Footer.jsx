@@ -9,7 +9,9 @@ const Footer = () => {
     return (
         <div className='bg-[#351FA9] py-20'>
             <CompLayout>
-                <div className='flex justify-between gap-10'>
+                <div className='flex justify-between gap-10
+                max-[769px]:flex-col
+                '>
                     <div>
                         <h2 className='text-white text-4xl font-medium'>About Us </h2>
 
@@ -60,7 +62,8 @@ const Footer = () => {
                             <hr className='bg-white border-0 h-[4px] w-50' />
                         </div>
 
-                        <div className='mt-6 flex justify-around'>
+                        <div className='mt-6 flex lg:justify-around
+                        max-[769px]:gap-20'>
                             <FaFacebook color='white' size={33} />
                             <IoLogoWhatsapp color='white' size={33}/>
                             <AiFillInstagram color='white' size={33} />

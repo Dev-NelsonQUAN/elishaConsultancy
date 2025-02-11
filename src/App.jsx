@@ -8,6 +8,7 @@ import Footer from './components/static/Footer'
 
 const App = () => {
   return (
+    <>
     <GlobalLayout>
       <Heropage />
       <AboutUs />
@@ -15,6 +16,7 @@ const App = () => {
       <Consultancy />
       <Footer />
     </GlobalLayout >
+    </>
   )
 }
 

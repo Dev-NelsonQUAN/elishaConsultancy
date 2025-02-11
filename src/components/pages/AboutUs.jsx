@@ -8,7 +8,7 @@ import AboutUsCard from './AboutUsCard'
 
 const AboutUs = () => {
     return (
-        <div className='bg-white' >
+        <div className='bg-white w-full' >
             <CompLayout>
                 <div className='flex flex-col justify-center py-20'>
                     <div className='flex flex-col items-center text-center'>

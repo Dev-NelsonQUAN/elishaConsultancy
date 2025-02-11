@@ -8,15 +8,12 @@ const Heropage = () => {
     <div className='bg-[url(./assets/elishaHeroPageOne.svg)] 
     bg-repeat
     bg-cover
-     w-[100vw] 
      h-[100vh]
-     relative 
+     w-full
      '
     >
-      <div className='absolute 
-      inset-0
-      left-0
-      w-[100vw] h-[100vh]
+      <div className='
+      h-[100vh]
       bg-[#0d0dd298]
       px-0
       py-8

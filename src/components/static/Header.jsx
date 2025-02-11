@@ -5,7 +5,7 @@ import GlobalBtn from '../ui/GlobalBtn'
 const Header = ({ bg }) => {
   return (
     <div className={`${bg} w-full flex items-center h-10 justify-between`}>
-      <div className='w-[240px]'>
+      <div className='w-[210px]'>
         <img src={elishaLogo} alt="Elisha Consultancy" />
       </div>
 
@@ -19,14 +19,15 @@ const Header = ({ bg }) => {
       </nav>
 
       <GlobalBtn
-        textBtn='Login'
+        textBtn='LOGIN'
         bg='bg-[#EC6401]'
-        paddingX='px-8'
+        paddingX='px-4'
         borderRadius='rounded-[5px]'
         border='border-none'
-        paddingY='py-3'
+        paddingY='py-2'
         color='text-white'
         fontWeight='font-medium'
+        fontSize='text-[16px]'
       />
     </div>
   )

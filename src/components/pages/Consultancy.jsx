@@ -114,7 +114,7 @@ const Consultancy = () => {
                         </div>
                         <div className='mt-4'>
                             <textarea name="place" 
-                            placeholder='joio'
+                            placeholder='Message'
                             className='w-full outline-none h-45 rounded-[5px]
                             bg-white
                             

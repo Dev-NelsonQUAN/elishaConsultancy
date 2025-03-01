@@ -64,9 +64,12 @@ const Footer = () => {
 
                         <div className='mt-6 flex lg:justify-around
                         max-[769px]:gap-20'>
-                            <FaFacebook color='white' size={33} />
-                            <IoLogoWhatsapp color='white' size={33}/>
-                            <AiFillInstagram color='white' size={33} />
+                            <FaFacebook color='white' size={33} 
+                            cursor= 'pointer' />
+                            <IoLogoWhatsapp color='white' size={33} 
+                            cursor= 'pointer'/>
+                            <AiFillInstagram color='white' size={33} 
+                            cursor= 'pointer' />
                         </div>
                     </div>
                 </div>

@@ -84,7 +84,8 @@ const Consultancy = () => {
                             <div className='flex items-center gap-5
                             max-[769px]:justify-center
                             '>
-                                <FaLocationDot size={30} />
+                                <FaLocationDot size={30} 
+                                />
 
                                 <p className='text-[24px] font-medium w-120'>2 Market Street, Tolu Road, down floor, shop 5, Olodi-Apapa Lagos, Nigeria</p>
                             </div>

@@ -8,11 +8,11 @@ import AboutUsCard from './AboutUsCard'
 
 const AboutUs = () => {
     return (
-        <div className='bg-white w-full' >
+        <div className='bg-white w-full' id='about' >
             <CompLayout>
                 <div className='flex flex-col justify-center py-20'>
                     <div className='flex flex-col items-center text-center'>
-                        <h2 className='text-[#c47237] text-[25px] font-bold'>ABOUT US</h2>
+                        <h2 className='text-[#EC6401] text-[35px] font-bold'>ABOUT US</h2>
                         <p className='font-bold text-3xl mt-2 w-130'>We help You from start to end immigration Process</p>
                     </div>
 

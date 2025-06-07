@@ -50,14 +50,14 @@ const Services = () => {
     ]
 
     return (
-        <div className='bg-[#0D0DD2]'>
+        <div className='bg-[#0D0DD2]' id='services'>
             <CompLayout>
                 <div className='py-20 '>
                     <div className='flex flex-col items-center text-center'>
-                        <h2 className='text-[#EC6401] text-[28px] font-medium'>SERVICES</h2>
+                        <h2 className='text-[#EC6401] text-[35px] font-bold'>SERVICES</h2>
                         <p className='text-white text-[40px] mt-2
                         font-medium
-                        '>What Can We Do For My Clients</p>
+                        '>What Can We Do For Our Clients</p>
                     </div>
 
                     <div className='grid lg:grid-cols-3 justify-center my-8 gap-10'>

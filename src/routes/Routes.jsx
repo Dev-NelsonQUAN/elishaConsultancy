@@ -39,7 +39,7 @@ const router = createHashRouter([
     {
         path: "/otp",
         element: <OTP />
-    }, 
+    },
     {
         path: "/confirm",
         element: <ConfrimPassword />

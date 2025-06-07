@@ -12,7 +12,6 @@ const Login = () => {
             max-[769px]:hidden
             '>
                 <img
-
                     src={loginImg} alt="Login Vector" />
             </div>
             <div className='w-[100%] bg-white p-[55px]'>

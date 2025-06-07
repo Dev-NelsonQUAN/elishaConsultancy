@@ -18,6 +18,6 @@ const ServicesCard = ({img, titleTxt, pTxt }) => {
         </div>
     </div>
   ) 
-}
+} 
 
 export default ServicesCard

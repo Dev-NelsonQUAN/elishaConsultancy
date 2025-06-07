@@ -8,7 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Consultancy = () => {
     return (
-        <div className='bg-white py-40'>
+        <div className='bg-white py-40' id='contact'>
             <CompLayout>
                 <div className='w-full h-140 
                 rounded-r-1xl rounded-tr-4xl rounded-bl-[40px]

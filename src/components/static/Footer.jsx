@@ -36,7 +36,7 @@ const Footer = () => {
                             <hr className='bg-white border-0 h-[4px] w-50' />
                         </div>
                         <div className='grid grid-cols-2 text-white mt-6 gap-3
-                        font-medium'>
+                        font-medium cursor-pointer'>
                             <p>- Flight Tickets </p>
                             <p> - Visa Applications </p>
                             <p>- Airport Drop And Pickup </p>

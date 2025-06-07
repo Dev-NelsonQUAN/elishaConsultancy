@@ -1,6 +1,6 @@
 import React from 'react'
-import Heropage from './components/pages/Heropage'
 import GlobalLayout from './layout/GlobalLayout'
+import Heropage from './components/pages/Heropage'
 import AboutUs from './components/pages/AboutUs'
 import Services from './components/pages/Services'
 import Consultancy from './components/pages/Consultancy'
@@ -12,7 +12,8 @@ const App = () => {
   return (
     <>
     <GlobalLayout>
-      <RouterProvider router={router} />      {/* <Heropage />
+      <RouterProvider router={router} />      
+      {/* <Heropage />
       <AboutUs />
       <Services />
       <Consultancy />

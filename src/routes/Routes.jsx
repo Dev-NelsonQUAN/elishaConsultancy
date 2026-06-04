@@ -1,4 +1,3 @@
-import React from 'react'
 import { createHashRouter } from 'react-router-dom'
 import SignUp from "../auth/SignUp"
 import Login from '../auth/Login'
@@ -10,12 +9,14 @@ import Footer from '../components/static/Footer'
 import ForgotPassword from '../auth/ForgotPassword'
 import OTP from '../auth/OTP'
 import ConfrimPassword from '../auth/ConfrimPassword'
+import Header from '../components/static/Header'
 
 const router = createHashRouter([
     {
         path: "/",
         element: (
             <>
+                <Header />
                 <Heropage />
                 <AboutUs />
                 <Services />

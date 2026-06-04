@@ -1,6 +1,4 @@
-import React from 'react'
 import CompLayout from '../../layout/CompLayout'
-import AboutUsCard from './AboutUsCard'
 import ServicesCard from './ServicesCard'
 import imgTwo from '../../assets/forex.svg'
 import imgOne from '../../assets/hotelReservation.svg'
@@ -50,14 +48,14 @@ const Services = () => {
     ]
 
     return (
-        <div className='bg-[#0D0DD2]' id='services'>
+        <div className='bg-[#288ACA]' id='services'>
             <CompLayout>
                 <div className='py-20 '>
                     <div className='flex flex-col items-center text-center'>
-                        <h2 className='text-[#EC6401] text-[35px] font-bold'>SERVICES</h2>
-                        <p className='text-white text-[40px] mt-2
+                        <h2 className='text-white text-[40px] font-serif font-bold'> Our Services </h2>
+                        <p className='text-white text-[14px] md:text-[20px] mt-2
                         font-medium
-                        '>What Can We Do For Our Clients</p>
+                        '>We provide end- to- end travel and documentation services tailored to your needs.</p>
                     </div>
 
                     <div className='grid lg:grid-cols-3 justify-center my-8 gap-10'>

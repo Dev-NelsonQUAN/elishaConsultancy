@@ -1,82 +1,91 @@
-import React from 'react'
+import logo from '../../assets/elishaConsultancy.svg'
 import CompLayout from '../../layout/CompLayout'
-import { FaFacebook } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { AiFillInstagram } from "react-icons/ai";
-
 
 const Footer = () => {
-    return (
-        <div className='bg-[#351FA9] py-20'>
-            <CompLayout>
-                <div className='flex justify-between gap-10
-                max-[769px]:flex-col
-                '>
-                    <div>
-                        <h2 className='text-white text-4xl font-medium'>About Us </h2>
+  const currentYear = new Date().getFullYear();
 
-                        <div className='mt-4 flex 
-                        '>
-                            <hr className='bg-[#EC6401] w-20 h-[4px] border-0' />
-                            <hr className='bg-white border-0 h-[4px] w-50' />
-                        </div>
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-                        <p className='text-white w-100 mt-6
-                        leading-[30px] font-medium
-                        '>Our mission is to offer help in documents processing assistance and services, focusing on the needs of our clients. If you have immigration needs, we can help you prepare your forms and documents. </p>
+  return (
+    <footer className='bg-[#2B8CC4] pt-16 pb-8 text-white'>
+      <CompLayout>
+        <div className='max-w-[1200px] mx-auto px-4'>
+          
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 items-start text-left'>
+            
+            <div className='flex flex-col gap-6'>
+              <div className='flex items-center gap-3 cursor-pointer' onClick={() => handleScroll('hero')}>
+                <img src={logo} alt="Elisha Consultancy Services Logo" className='w-10 h-10 object-contain' />
+                <h2 className='text-[20px] font-bold tracking-wider leading-tight uppercase font-sans'>
+                  Elisha Consultancy<br />Services
+                </h2>
+              </div>
+              <p className='text-[16px] font-medium leading-relaxed max-w-[320px] text-white/90'>
+                Your trusted partner for unforgettable travel experiences.
+              </p>
+            </div>
 
-                    </div>
+            <div className='flex flex-col gap-5 md:pl-12'>
+              <h3 className='text-[18px] font-bold tracking-wide font-sans'>Quick Links</h3>
+              <ul className='flex flex-col gap-3.5 text-[15px] font-medium text-white/80'>
+                <li>
+                  <button onClick={() => handleScroll('hero')} className='hover:text-black transition-colors duration-200 text-left cursor-pointer'>
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleScroll('about')} className='hover:text-black transition-colors duration-200 text-left cursor-pointer'>
+                    About Us
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleScroll('services')} className='hover:text-black transition-colors duration-200 text-left cursor-pointer'>
+                    Services
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleScroll('contact')} className='hover:text-black transition-colors duration-200 text-left cursor-pointer'>
+                    Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
 
-                    <div>
-                        <h2 className='text-white
-                        text-4xl font-medium'>Services </h2>
+            <div className='flex flex-col gap-5 md:pl-6'>
+              <h3 className='text-[18px] font-bold tracking-wide font-sans'>Services</h3>
+              <ul className='flex flex-col gap-3.5 text-[15px] font-medium text-white/80'>
+                <li className='hover:text-black cursor-pointer transition-colors duration-200' onClick={() => handleScroll('services')}>
+                  Flights & Hotels
+                </li>
+                <li className='hover:text-black cursor-pointer transition-colors duration-200' onClick={() => handleScroll('services')}>
+                  Passport Processing
+                </li>
+                <li className='hover:text-black cursor-pointer transition-colors duration-200' onClick={() => handleScroll('services')}>
+                  Visa Services
+                </li>
+                <li className='hover:text-black cursor-pointer transition-colors duration-200' onClick={() => handleScroll('services')}>
+                  Document Processing
+                </li>
+              </ul>
+            </div>
 
-                        <div className='mt-4 flex'>
-                            <hr className='bg-[#EC6401] w-20 h-[4px] border-0' />
-                            <hr className='bg-white border-0 h-[4px] w-50' />
-                        </div>
-                        <div className='grid grid-cols-2 text-white mt-6 gap-3
-                        font-medium cursor-pointer'>
-                            <p>- Flight Tickets </p>
-                            <p> - Visa Applications </p>
-                            <p>- Airport Drop And Pickup </p>
-                            <p>- Offshore Payment Assistant</p>
-                            <p>- Police Character Processing</p>
-                            <p>- Hotel Reservation</p>
-                            <p>- Study Abroad Assistant</p>
-                            <p>- Logistics </p>
-                            <p>- Vacation Packages</p>
-                            <p>- Estate Agent</p>
-                            <p>- Broker</p>
-                            <p>- Passport Application</p>
-                            <p>- Forex</p>
-                            <p>- Documents Processing</p>
-                        </div>
-                    </div>
+          </div>
 
-                    <div>
-                        <h2 className='text-white text-4xl'>Follow Us </h2>
-
-                        <div className='mt-4 flex'>
-                            <hr className='bg-[#EC6401] w-20 h-[4px] border-0' />
-                            <hr className='bg-white border-0 h-[4px] w-50' />
-                        </div>
-
-                        <div className='mt-6 flex lg:justify-around
-                        max-[769px]:gap-20'>
-                            <FaFacebook color='white' size={33} 
-                            cursor= 'pointer' />
-                            <IoLogoWhatsapp color='white' size={33} 
-                            cursor= 'pointer'/>
-                            <AiFillInstagram color='white' size={33} 
-                            cursor= 'pointer' />
-                        </div>
-                    </div>
-                </div>
-            </CompLayout>
+          <div className='border-t border-white/20 pt-8 mt-4 text-center'>
+            <p className='text-[13px] sm:text-[14px] font-medium tracking-wide text-white/90'>
+              &copy; {currentYear} Elisha Consultancy Services. All rights reserved.
+            </p>
+          </div>
 
         </div>
-    )
+      </CompLayout>
+    </footer>
+  )
 }
 
 export default Footer

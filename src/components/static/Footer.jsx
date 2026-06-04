@@ -20,7 +20,7 @@ const Footer = () => {
             
             <div className='flex flex-col gap-6'>
               <div className='flex items-center gap-3 cursor-pointer' onClick={() => handleScroll('hero')}>
-                <img src={logo} alt="Elisha Consultancy Services Logo" className='w-10 h-10 object-contain' />
+                <img src={logo} alt="Elisha Consultancy Services Logo" className='w-10 h-10 object-cover' />
                 <h2 className='text-[20px] font-bold tracking-wider leading-tight uppercase font-sans'>
                   Elisha Consultancy<br />Services
                 </h2>

@@ -1,9 +1,10 @@
+import { Helmet } from 'react-helmet-async';
 import CompLayout from '../../layout/CompLayout';
 import teamImg from '../../assets/aboutUsImg.jpg';
 
 const AboutUs = () => {
 
-    const stats = [
+  const stats = [
     { value: '2+', label: 'Years of Excellence' },
     { value: '50K+', label: 'Happy Travelers' },
     { value: '100+', label: 'Destinations' },
@@ -12,6 +13,19 @@ const AboutUs = () => {
 
   return (
     <section className="bg-white w-full py-16 sm:py-20" id="about">
+      <Helmet>
+        <title>About Us | Elisha Consultancy</title>
+        <meta 
+          name="description" 
+          content="Learn about Elisha Consultancy Service Travel. Founded in 2024, we make international travel, visas, study abroad programs, and passport processing stress-free." 
+        />
+        <meta property="og:title" content="About Us | Elisha Consultancy" />
+        <meta 
+          property="og:description" 
+          content="Your trusted travel and documentation partner since 2024 with a 98% client satisfaction rate." 
+        />
+      </Helmet>
+
       <CompLayout>
         <div className="flex flex-col gap-16 max-w-[1200px] mx-auto px-4">
           
@@ -68,6 +82,77 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+// import CompLayout from '../../layout/CompLayout';
+// import teamImg from '../../assets/aboutUsImg.jpg';
+
+// const AboutUs = () => {
+
+//     const stats = [
+//     { value: '2+', label: 'Years of Excellence' },
+//     { value: '50K+', label: 'Happy Travelers' },
+//     { value: '100+', label: 'Destinations' },
+//     { value: '24/7', label: 'Customer Support' }
+//   ];
+
+//   return (
+//     <section className="bg-white w-full py-16 sm:py-20" id="about">
+//       <CompLayout>
+//         <div className="flex flex-col gap-16 max-w-[1200px] mx-auto px-4">
+          
+//           <div className="text-center">
+//             <h2 className="text-black text-[32px] md:text-[40px] font-serif font-bold relative inline-block after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-2 after:w-12 after:h-[3px] after:bg-[#FFAE42]">
+//               About Us
+//             </h2>
+//           </div>
+
+//           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
+            
+//             <div className="w-full h-[320px] sm:h-[400px] rounded-[24px] overflow-hidden shadow-lg">
+//               <img 
+//                 src={teamImg} 
+//                 alt="Elisha Consultancy Team working together" 
+//                 className="w-full h-full object-cover"
+//               />
+//             </div>
+
+//             <div className="flex flex-col gap-5 text-left">
+//               <h3 className="text-black text-[28px] sm:text-[34px] font-serif font-bold leading-tight">
+//                 Your Trusted Travel Partner Since 2024
+//               </h3>
+              
+//               <div className="text-gray-700 text-[15px] sm:text-[16px] leading-relaxed flex flex-col gap-4 font-normal">
+//                 <p>
+//                   Elisha Consultancy Service Travel was founded with a simple mission: to make international travel accessible, stress-free, and affordable for every Nigerian. We&apos;ve since grown into a full-service travel and documentation agency trusted by thousands.
+//                 </p>
+//                 <p>
+//                   Our experienced team provides personalised guidance on passports, visas, study abroad programmes, and vacation planning. We pride ourselves on transparency, reliability, and a 98% client satisfaction rate.
+//                 </p>
+//               </div>
+//             </div>
+
+//           </div>
+
+//           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-gray-100 text-center">
+//             {stats.map((stat, idx) => (
+//               <div key={idx} className="flex flex-col gap-2">
+//                 <span className="text-[#288ACA] text-[32px] sm:text-[40px] font-bold tracking-tight">
+//                   {stat.value}
+//                 </span>
+//                 <span className="text-gray-600 text-[14px] sm:text-[16px] font-medium whitespace-nowrap">
+//                   {stat.label}
+//                 </span>
+//               </div>
+//             ))}
+//           </div>
+
+//         </div>
+//       </CompLayout>
+//     </section>
+//   );
+// };
+
+// export default AboutUs;
 
 
 // import CompLayout from '../../layout/CompLayout'
